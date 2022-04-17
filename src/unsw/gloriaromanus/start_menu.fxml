@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="796.0" prefWidth="852.0" style="-fx-background-color: oldlace;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unsw.gloriaromanus.startMenuController">
+   <children>
+      <Pane prefHeight="97.0" prefWidth="822.0" style="-fx-background-color: oldlace;">
+         <children>
+            <Label layoutX="208.0" layoutY="23.0" text="GLORIA ROMANUS">
+               <font>
+                  <Font name="Sarai" size="68.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane prefHeight="676.0" prefWidth="852.0" style="-fx-background-color: oldlace;">
+         <children>
+            <Label layoutX="26.0" layoutY="75.0" text="PLAYER NAMES:">
+               <font>
+                  <Font name="DejaVu Sans Mono Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="189.0" prefHeight="36.0" prefWidth="344.0" text="DEFAULT TAX RATE:">
+               <font>
+                  <Font name="DejaVu Sans Mono Bold" size="30.0" />
+               </font>
+            </Label>
+            <TextField fx:id="playerA" layoutX="404.0" layoutY="80.0" prefHeight="38.0" prefWidth="119.0" />
+            <Button layoutX="299.0" layoutY="439.0" mnemonicParsing="false" onAction="#startGame" prefHeight="56.0" prefWidth="292.0" style="-fx-background-color: lightgreen;" text="START GAME">
+               <font>
+                  <Font name="DejaVu Sans Mono Bold" size="30.0" />
+               </font>
+            </Button>
+            <Label layoutX="415.0" layoutY="27.0" text="ROME">
+               <font>
+                  <Font name="Sarai" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="703.0" layoutY="27.0" text="GAUL">
+               <font>
+                  <Font name="Sarai" size="40.0" />
+               </font>
+            </Label>
+            <TextField fx:id="playerB" layoutX="687.0" layoutY="79.0" prefHeight="38.0" prefWidth="119.0" />
+            <TextField fx:id="newCampaign" layoutX="401.0" layoutY="274.0" prefHeight="38.0" prefWidth="414.0" />
+            <Button layoutX="299.0" layoutY="606.0" mnemonicParsing="false" onAction="#loadGame" prefHeight="56.0" prefWidth="292.0" style="-fx-background-color: orange;" text="LOAD GAME">
+               <font>
+                  <Font name="DejaVu Sans Mono Bold" size="30.0" />
+               </font>
+            </Button>
+            <Label layoutX="20.0" layoutY="275.0" prefHeight="36.0" prefWidth="344.0" text="CAMPAIGN NAME:">
+               <font>
+                  <Font name="DejaVu Sans Mono Bold" size="30.0" />
+               </font>
+            </Label>
+            <TextField fx:id="savedCampaign" layoutX="399.0" layoutY="526.0" prefHeight="38.0" prefWidth="414.0" />
+            <Label layoutX="18.0" layoutY="527.0" prefHeight="36.0" prefWidth="344.0" text="CAMPAIGN NAME:">
+               <font>
+                  <Font name="DejaVu Sans Mono Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="357.0" prefHeight="36.0" prefWidth="344.0" text="VICTORY CONDITION:">
+               <font>
+                  <Font name="DejaVu Sans Mono Bold" size="30.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="victoryChoiceBox" layoutX="405.0" layoutY="355.0" prefHeight="38.0" prefWidth="408.0" />
+            <ChoiceBox fx:id="taxA" layoutX="402.0" layoutY="188.0" prefHeight="38.0" prefWidth="119.0" />
+            <ChoiceBox fx:id="taxB" layoutX="687.0" layoutY="188.0" prefHeight="38.0" prefWidth="119.0" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

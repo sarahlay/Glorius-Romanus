@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Background?>
+<?import javafx.scene.layout.BackgroundFill?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxWidth="479.0" prefHeight="724.0" prefWidth="479.0" spacing="10" styleClass="panel-region" stylesheets="/unsw/gloriaromanus/style.css" StackPane.alignment="TOP_LEFT" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unsw.gloriaromanus.RecruitmentMenuController">
+    <padding>
+        <Insets topRightBottomLeft="10" />
+    </padding>
+    <background>
+        <Background>
+            <fills>
+                <BackgroundFill>
+                    <fill>
+                        <Color opacity="0.3" />
+                    </fill>
+                </BackgroundFill>
+            </fills>
+        </Background>
+    </background>
+   <HBox prefHeight="56.0" prefWidth="459.0">
+      <children>
+         <Label prefHeight="30.0" prefWidth="167.0" text="TREASURY:">
+            <font>
+               <Font name="DejaVu Sans Mono Bold" size="25.0" />
+            </font>
+         </Label>
+         <Label fx:id="treasury" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="329.0">
+            <font>
+               <Font name="DejaVu Sans Mono Bold" size="25.0" />
+            </font>
+         </Label>
+      </children>
+   </HBox>
+    <HBox>
+        <VBox>
+            <Label prefHeight="30.0" prefWidth="222.0" text="YOUR PROVINCE">
+            <font>
+               <Font name="DejaVu Sans Mono Bold" size="25.0" />
+            </font></Label>
+            <TextField fx:id="province" editable="false" prefHeight="26.0" prefWidth="172.0" text="" />
+        </VBox>
+        <VBox prefHeight="56.0" prefWidth="227.0">
+            <Label text="UNIT TYPE">
+            <font>
+               <Font name="DejaVu Sans Mono Bold" size="25.0" />
+            </font></Label>
+         <ChoiceBox fx:id="unit_choicebox" prefHeight="26.0" prefWidth="229.0" />
+         <Label text="UNIT NAME">
+            <font>
+               <Font name="DejaVu Sans Mono Bold" size="25.0" />
+            </font>
+         </Label>
+         <TextField fx:id="unit_name" prefHeight="25.0" prefWidth="243.0" />
+        </VBox>
+    </HBox>
+    <Button onAction="#clickedRecruitButton" style="-fx-background-color: yellow;" text="RECRUIT">
+      <font>
+         <Font name="DejaVu Sans Mono Bold" size="25.0" />
+      </font></Button>
+    <VBox>
+        <Label text="OUTPUT FROM INTERACTIONS">
+         <font>
+            <Font name="DejaVu Sans Mono Bold" size="25.0" />
+         </font></Label>
+        <TextArea fx:id="output_terminal" editable="false" prefWidth="459.0" text="" />
+    </VBox>
+   <VBox>
+      <children>
+         <Label text="CURRENT TROOPS">
+            <font>
+               <Font name="DejaVu Sans Mono Bold" size="25.0" />
+            </font>
+         </Label>
+         <TextArea fx:id="troops" editable="false" prefWidth="459.0" text="" wrapText="true" />
+      </children>
+   </VBox>
+    <Button onAction="#clickedSwitchMenu" style="-fx-background-color: aqua;" text="SWITCH MENUS">
+      <font>
+         <Font name="DejaVu Sans Mono Bold" size="25.0" />
+      </font></Button>
+</VBox>

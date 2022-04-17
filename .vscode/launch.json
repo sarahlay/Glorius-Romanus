@@ -1,0 +1,72 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "cwd": "${workspaceRoot}",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GloriaRomanusLauncher",
+            "request": "launch",
+            "mainClass": "GloriaRomanusLauncher",
+            "projectName": "m17a-thejavabenders_e5b0b1d4"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - tester",
+            "request": "launch",
+            "mainClass": "unsw.gloriaromanus.tester",
+            "projectName": "m17a-thejavabenders_e5b0b1d4"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - test",
+            "request": "launch",
+            "mainClass": "unsw.gloriaromanus.test",
+            "projectName": "m17a-thejavabenders_e5b0b1d4"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestRunner",
+            "request": "launch",
+            "mainClass": "unsw.gloriaromanus.TestRunner",
+            "projectName": "m17a-thejavabenders_e5b0b1d4"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestRunner",
+            "request": "launch",
+            "mainClass": "test.TestRunner",
+            "projectName": "m17a-thejavabenders_e5b0b1d4"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestRunner",
+            "request": "launch",
+            "mainClass": "unsw.gloriaromanus.backend.TestRunner",
+            "projectName": "m17a-thejavabenders_29402cbd"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestRunner",
+            "request": "launch",
+            "mainClass": "test.TestRunner",
+            "projectName": "m17a-thejavabenders_29402cbd"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestRunner",
+            "request": "launch",
+            "mainClass": "test.TestRunner",
+            "projectName": "m17a-thejavabenders_73d7664b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GloriaRomanusLauncher",
+            "request": "launch",
+            "mainClass": "unsw.gloriaromanus.GloriaRomanusLauncher",
+            "vmArgs": "--module-path \"./lib/symlink_javafx:./lib/symlink_arcgis\" --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "Artillery": {
+        "category": "artillery",
+        "cost": 100,
+        "troops": 50,
+        "attack": 4,
+        "shield": 5,
+        "armour": 4,
+        "time": 1
+    },
+    "Chariots": {
+        "category": "cavalry",
+        "cost": 400,
+        "troops": 20,
+        "charge": 5,
+        "attack": 8,
+        "shield": 6,
+        "armour": 7,
+        "time": 2
+    },
+    "Elephants": {
+        "category": "cavalry",
+        "cost": 800,
+        "troops": 16,
+        "charge": 8,
+        "attack": 10,
+        "shield": 10,
+        "armour": 10,
+        "time": 3
+    },
+    "Melee Cavalry": {
+        "category": "cavalry",
+        "cost": 300,
+        "troops": 20,
+        "charge": 3,
+        "attack": 6,
+        "shield": 5,
+        "armour": 7,
+        "time": 1
+    },
+    "Melee Infantry": {
+        "category": "infantry",
+        "cost": 200,
+        "troops": 20,
+        "attack": 5,
+        "shield": 5,
+        "armour": 6,
+        "time": 1
+    }
+}

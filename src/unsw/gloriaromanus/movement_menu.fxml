@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Background?>
+<?import javafx.scene.layout.BackgroundFill?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxWidth="652.0" prefHeight="604.0" prefWidth="652.0" spacing="10" styleClass="panel-region" stylesheets="/unsw/gloriaromanus/style.css" StackPane.alignment="TOP_LEFT" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unsw.gloriaromanus.MovementMenuController">
+    <padding>
+        <Insets topRightBottomLeft="10" />
+    </padding>
+    <background>
+        <Background>
+            <fills>
+                <BackgroundFill>
+                    <fill>
+                        <Color opacity="0.3" />
+                    </fill>
+                </BackgroundFill>
+            </fills>
+        </Background>
+    </background>
+    <HBox prefHeight="51.0" prefWidth="632.0">
+        <VBox>
+            <Label prefHeight="32.0" prefWidth="245.0" text="ORIGIN PROVINCE">
+            <font>
+               <Font name="DejaVu Sans Mono Bold" size="25.0" />
+            </font></Label>
+            <TextField fx:id="origin" editable="false" prefHeight="21.0" prefWidth="328.0" text="" />
+        </VBox>
+        <VBox>
+            <Label prefHeight="30.0" prefWidth="319.0" text="DESTINATION PROVINCE">
+            <font>
+               <Font name="DejaVu Sans Mono Bold" size="25.0" />
+            </font>
+         </Label>
+            <TextField fx:id="destination" editable="false" text="" />
+        </VBox>
+    </HBox>
+    <Button onAction="#clickedMoveButton" style="-fx-background-color: yellow;" text="MOVE">
+      <font>
+         <Font name="DejaVu Sans Mono Bold" size="25.0" />
+      </font></Button>
+    <VBox>
+        <Label text="OUTPUT FROM INTERACTIONS">
+         <font>
+            <Font name="DejaVu Sans Mono Bold" size="25.0" />
+         </font></Label>
+        <TextArea fx:id="output_terminal" editable="false" text="" />
+    </VBox>
+    <Button onAction="#clickedSwitchMenu" style="-fx-background-color: aqua;" text="SWITCH MENUS">
+      <font>
+         <Font name="DejaVu Sans Mono Bold" size="25.0" />
+      </font></Button>
+</VBox>
